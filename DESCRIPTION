@@ -1,0 +1,14 @@
+Package: mm
+Type: Package
+Title: Michaelis-Menten Functions for rxode2 Models
+Version: 0.1.0
+Authors@R: person("First", "Last", email = "first.last@example.com",
+    role = c("aut", "cre"))
+Description: Provides a Michaelis-Menten saturable-elimination function mm()
+    with analytic first- and second-order derivatives for use in rxode2 and
+    nlmixr2 pharmacometric models.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: rxode2
+LinkingTo: rxode2
+RoxygenNote: 7.3.2
