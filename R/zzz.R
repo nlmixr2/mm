@@ -1,5 +1,4 @@
-.onLoad <- function(libname, pkgname) {
-
+.onAttach <- function(libname, pkgname) {
   .cur <- rxode2::rxode2parseGetTranslation()
 
   .newRows <- data.frame(
@@ -33,7 +32,7 @@
     }
 
     if (nrow(.fromSelf) > 0L) {
-      message(
+      packageStartupMessage(
         "Package 'mm' rxode2 function registration was already present ",
         "(package reloaded); re-registering."
       )
