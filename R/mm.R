@@ -42,6 +42,10 @@ mm_dKm <- function(C, Vmax, Km) {
   .Call(`_mm_mm_dKm`, as.double(df$C), as.double(df$Vmax), as.double(df$Km))
 }
 
+#' @importFrom rxode2 rxUdfUi
+#' @export
+rxode2::rxUdfUi
+
 #' rxode2 ui model interface for mm()
 #'
 #' Allows \code{mm()} to be called with named arguments in any order
